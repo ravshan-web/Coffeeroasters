@@ -1,0 +1,120 @@
+.intro {
+  width: 1280px;
+  height: 600px;
+  background-image: url(../../images/photos/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+//   margin-top: 43px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+
+  &__context {
+    position: absolute;
+    top: 50px;
+    left: 81px;
+    display: block;
+    width: 493px;
+    height: 367px;
+  }
+
+  &__context > h1 {
+    font-family: $ff-title;
+    color: $main-text-color;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  &__context > p {
+    width: 445px;
+    height: 78px;
+    color: $main-text-color;
+    opacity: 0.8;
+    font-size: 18px;
+    font-family: $ff-text;
+    line-height: 26px;
+  }
+
+  &__context > a {
+    display: inline-block;
+    border: none;
+    padding: 16px 31px;
+    text-decoration: none;
+    color: $main-text-color;
+    font-family: $ff-title;
+    font-weight: $ff-title;
+    font-size: 18px;
+    background-color: $third-bg;
+    border-radius: 6px;
+    margin-top: 56px;
+  }
+
+  &__context > a:hover {
+    background-color: $btn-bg-hover;
+  }
+}
+
+// R W D ==================
+
+@media only screen and (max-width: 768px){
+  .intro {
+    max-width: 689px;
+    height: 600px;
+    background-image: url(../../images/photos/rwd/intro_768px.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  //   margin-top: 43px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+  
+    &__context {
+      position: absolute;
+      top: 100px;
+      left: 81px;
+      display: block;
+      width: 493px;
+      height: 367px;
+    }
+  
+    &__context > h1 {
+      font-family: $ff-title;
+      color: $main-text-color;
+      font-size: 48px;
+      line-height: 48px;
+      max-width: 329px;
+    }
+  
+    &__context > p {
+      width: 398px;
+      height: 78px;
+      color: $main-text-color;
+      opacity: 0.8;
+      font-size: 15px;
+      font-family: $ff-text;
+      line-height: 25px;
+    }
+  
+    &__context > a {
+      display: inline-block;
+      border: none;
+      padding: 16px 31px;
+      text-decoration: none;
+      color: $main-text-color;
+      font-family: $ff-title;
+      font-weight: $ff-title;
+      font-size: 18px;
+      background-color: $third-bg;
+      border-radius: 6px;
+      margin-top: 56px;
+    }
+  
+    &__context > a:hover {
+      background-color: $btn-bg-hover;
+    }
+  }
+}

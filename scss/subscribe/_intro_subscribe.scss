@@ -1,0 +1,38 @@
+.intro {
+    max-width: 100%;
+    height: 450px;
+    background-image: url(../..//images/photos/subscribe-intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    &__context {
+        position: absolute;
+        width: 486px;
+        height: 182px;
+        top: 70px;
+        left: 105px;
+
+
+        h1 {
+            font: $title-main;
+            color: $main-bg;
+            line-height: 72px;
+        }
+
+        p {
+            font-family: $ff-text;
+            color: $main-bg;
+            line-height: 26px;
+            font-size: $fs-text;
+            font-weight: $weight-text;
+        }
+
+    }
+
+
+}

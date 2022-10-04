@@ -1,0 +1,216 @@
+.advertising {
+    width: 1280px;
+    height: 577px;
+    border-radius: 10px;
+    background-color: $secondary-bg;
+    position: relative;
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 100px;
+
+
+        h2 {
+            width: 329px;
+            height: 48px;
+            margin-top: 100px;
+            font-weight: $weight-title;
+            color: #FEFCF7;
+            font-family: $ff-title;
+            font-size: $fs-title;
+            line-height: 48px;
+
+        }
+
+        p {
+            font-family: $ff-text;
+            text-align: center;
+            width: 540px;
+            height: 80px;
+            font-size: $fs-text;
+            color: $main-text-color;
+            font-weight: $weight-text;
+            line-height: 26px;
+            margin-top: 32px;
+        }
+
+    }
+
+    &__card-wrapper {
+        width: 1110px;
+        height: 382px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 86px;
+        position: absolute;
+        left: 85px;
+
+        &--ad-card {
+            width: 350px;
+            height: 382px;
+            background-color: $third-bg;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .card-icon {
+                margin-top: 74px;
+
+                img {
+                    width: 72px;
+                    height: 72px;
+                }
+            }
+
+            .card-context {
+                h3 {
+                    text-align: center;
+                    color: $main-text-color;
+                    font-size: 24px;
+                    font-family: $ff-title;
+                    font-weight: $weight-title;
+                    line-height: 32px;
+                    margin-top: 56px;
+
+                }
+
+                p {
+                    color: $main-text-color;
+                    font-family: $ff-text;
+                    font-size: fs-text;
+                    line-height: 26px;
+                    text-align: center;
+                    margin-top: 24px;
+                    width: 255px;
+                    height: 78px;
+
+                }
+            }
+        }
+    }
+
+}
+
+
+/// R W D ===================
+
+@media only screen and (max-width:768px) {
+    .advertising {
+        max-width: 689px;
+        height: 620px;
+        border-radius: 10px;
+        background-color: $secondary-bg;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 500px;
+
+        &__title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // margin-top: 56px;
+
+            h2 {
+                width: 329px;
+                height: 48px;
+                margin-top: 56px;
+                font-weight: $weight-title;
+                color: #FEFCF7;
+                font-family: $ff-title;
+                font-size: 32px;
+                line-height: 48px;
+                text-align: center;
+            }
+
+            p {
+                font-family: $ff-text;
+                text-align: center;
+                width: 540px;
+                height: 80px;
+                font-size: 15px;
+                color: $main-text-color;
+                font-weight: $weight-text;
+                line-height: 25px;
+                margin-top: 32px;
+            }
+
+        }
+
+
+
+        &__card-wrapper {
+            max-width: 689px;
+            height: 624px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            left: 0;
+
+            &--ad-card {
+                background-color: $third-bg;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                
+                width: 573px;
+                height: 180px;
+                
+
+                .card-icon {
+                    margin: 0;
+
+                    img {
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+
+                .card-context {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+
+                    h3 {
+                        margin: 0;
+                        color: $main-text-color;
+                        font-size: 24px;
+                        font-family: $ff-title;
+                        font-weight: $weight-title;
+                        line-height: 32px;
+
+                    }
+
+                    p {
+                        margin: 0;
+                        color: $main-text-color;
+                        font-family: $ff-text;
+                        font-size: fs-text;
+                        line-height: 26px;
+                        margin-top: 16px;
+                        text-align: left;
+                        height: 50px;
+                        width: 344px;
+                    }
+                }
+            }
+
+        }
+
+
+
+    }
+}

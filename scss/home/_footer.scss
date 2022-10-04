@@ -1,0 +1,143 @@
+footer {
+    background-color: $secondary-bg;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 210px;
+    }
+}
+
+.footer__nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 105px;
+
+    &--list {
+        list-style-type: none;
+        text-transform: uppercase;
+
+        a {
+            text-decoration: none;
+            color: #83888F;
+            font-family: $ff-text;
+            font-size: 12px;
+            letter-spacing: 0.92px;
+            font-weight: 700;
+        }
+
+        a:hover {
+            color: #FEFCF7;
+        }
+    }
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 305px;
+
+    i {
+        transform: scale(2);
+        margin-right: 48px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    i:hover {
+        color: #FDD6BA;
+        transition: all 0.4s;
+        transform: scale(3);
+    }
+
+
+}
+
+
+// R W D =============
+
+@media only screen and (max-width:768px) {
+    footer {
+        background-color: $secondary-bg;
+        height: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer {
+        width: 283px;
+        height: 162px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .logo {
+        display: inline;
+        width: 210px;
+    }
+
+    .footer__nav {
+        width: 283px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+
+        &--list {
+            list-style-type: none;
+            text-transform: uppercase;
+
+            a {
+                margin: 0;
+                text-decoration: none;
+                color: #83888F;
+                font-family: $ff-text;
+                font-size: 12px;
+                letter-spacing: 0.92px;
+                font-weight: 700;
+            }
+
+            a:hover {
+                color: #FEFCF7;
+            }
+        }
+    }
+
+
+    .social-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+        margin: 0;
+
+        i {
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        i:hover {
+            color: #FDD6BA;
+            transition: all 0.4s;
+            transform: scale(2);
+        }
+
+
+    }
+}

@@ -1,0 +1,34 @@
+.intro{
+    width: 1280px;
+    height: 450px;
+    background-image: url(../../images/photos/about-intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+
+        &__context{
+            position: absolute;
+            width: 445px;
+            height: 176px;
+            text-align: left;
+            margin-top: 137px;
+            margin-left: 85px;
+
+            h1{
+                color: $main-text-color;
+                font-weight: $weight-title;
+                font-size: $fs-title;
+                font-family: $ff-title;
+                line-height: 48px;
+            }
+
+            p{
+                font-family: $ff-text;
+                color: $main-text-color;
+                font-size: $fs-text;
+                font-weight: $weight-text;
+                line-height: 26px;
+            }
+        }
+}

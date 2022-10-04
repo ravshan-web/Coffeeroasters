@@ -1,0 +1,51 @@
+.headquarters{
+    width: 1045px;
+    height: 366px; 
+    margin: 168px 0;
+
+        &__title{
+            h2{
+                color: #83888F;
+                font-size: $fs-title;
+                font-family: $ff-title;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        &__card-wrappers{
+            width: 1045px;
+            height: 262px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 72px;
+
+            &--card{
+                width: 285px;
+                height: 262px;
+                text-align: start;
+
+                h3{
+                    color: $secondary-bg;
+                    font-size: 32px;
+                    line-height: 36px;
+                    font-family: $ff-title;
+                    font-weight: $weight-title;
+                    margin-top: 45.93px;
+                    margin-bottom: 24px;
+                }
+
+                p{
+                    color: $secondary-bg;
+                    font-family: $ff-text;
+                    font-weight: $weight-text;
+                    font-size: $fs-text;
+                    line-height: 26px;
+                    
+                    
+                }
+                
+            }    
+        }
+}

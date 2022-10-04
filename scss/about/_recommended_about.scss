@@ -1,0 +1,47 @@
+.recommended{
+    width:1280px;
+    height: 474px;
+    background-color: $secondary-bg;
+    display: flex;
+    margin-bottom: 100px;   
+    margin-top: 256px; 
+    border-radius: 10px;
+    position: relative;
+
+    &__img img{
+        position: absolute;
+        width: 445px;
+        height: 474px;
+        right: 85px;
+        bottom: 88px;
+        border-radius: 8px;
+        
+    }
+
+    &__context{
+        display: block;
+        width: 540px;
+        height: 210px;
+        margin: 88px 0 0 85px;
+
+        h2{ 
+            font-family: $ff-title;
+            font-weight: $weight-title;
+            font-size: $fs-title;
+            color: $main-bg;
+            line-height: 48px;
+        }
+
+        p{
+            margin-top: 32px;
+            color: $main-bg;
+            font-size: $fs-text;
+            font-family: $ff-text;
+            font-weight: $weight-text;
+            line-height: 26px;
+        }
+    }
+
+
+    
+}   

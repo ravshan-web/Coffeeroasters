@@ -1,0 +1,237 @@
+.zero {
+    max-width: 100%;
+    height: auto;
+    margin-top: 159px;
+    display: flex;
+    justify-content: space-around;
+
+    //Left side styles
+
+    aside {
+        display: block;
+        width: 255px;
+        height: 356px;
+        // background-color: rgb(255, 140, 0);
+
+        span {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            margin: 24px 0;
+
+            a,
+            p {
+                cursor: pointer;
+                display: inline-block;
+                font-family: $ff-title;
+                color: #acafb2;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: $weight-title;
+                margin-right: 25.5px;
+            }
+
+            a:active {
+                color: #333D4B;
+                opacity: 0.7;
+            }
+        }
+
+        hr {
+            max-width: 100%;
+            height: 1px;
+            background: #83888f;
+            opacity: 0.25;
+        }
+    }
+
+    span:nth-child(1) p {
+        color: #9ecdc9;
+    }
+
+    span:nth-child(9) p {
+        color: #83888f;
+    }
+
+    span:nth-child(9) a {
+        color: #333d4b;
+    }
+
+    // Right side styles
+
+    &__right-side {
+        display: block;
+        max-width: 730px;
+        height: auto;
+        // background-color: rgb(91, 91, 195);
+
+        .choose {
+            width: 730px;
+            height: 354px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-bottom: 88px;
+            // background-color: brown;
+
+            &__title {
+                width: 100%;
+                height: 48px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h3 {
+                    font-family: $ff-title;
+                    color: #83888F;
+                    font-size: $fs-title;
+                    line-height: 32px;
+                    font-weight: $weight-title;
+                }
+
+                .arrow-up {
+                    border: solid #0E8784;
+                    border-width: 0 4px 4px 0;
+                    display: inline-block;
+                    padding: 4px;
+                    transform: rotate(-135deg);
+                    cursor: pointer;
+                }
+
+            }
+
+            &__context {
+                width: 100%;
+                height: 250px;
+                display: flex;
+                justify-content: space-between;
+
+                &--card:hover {
+                    background-color:#FDD6BA ;
+                    transition: all 0.2s;
+
+                    .desc {
+
+                        h4,
+                        p {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &--card:active {
+                    background-color: #0E8784;
+
+                    .desc {
+
+                        h4,
+                        p {
+                            color: $secondary-bg;
+                        }
+                    }
+                }
+
+                &--card {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 228px;
+                    height: 250px;
+                    border-radius: 8px;
+                    background-color: #F2EFE9;
+                    cursor: pointer;
+
+                    .desc {
+                        width: 172px;
+                        height: 134px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        h4 {
+                            font-family: $ff-title;
+                            color: $secondary-bg;
+                            font-weight: $weight-title;
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+
+                        p {
+                            font-family: $ff-text;
+                            color: $secondary-bg;
+                            font-weight: $weight-text;
+                            font-size: 16px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .order-summary {
+            width: 100%;
+            height: 208px;
+            background-color: $secondary-bg;
+            border-radius: 10px;
+            padding: 27px 64px;
+
+            .desc {
+                width: 602px;
+                height: 154px;
+
+                .title {
+                    p {
+                        color: #fff;
+                        opacity: 0.5;
+                        font-family: $ff-text;
+                        font-size: $fs-text;
+                        line-height: 26px;
+                    }
+                }
+
+                .text {
+                    color: #fff;
+                    font-weight: $weight-title;
+                    font-size: 24px;
+                    line-height: 40px;
+                    font-family: $ff-title;
+                }
+            }
+
+
+        }
+
+        .order-button {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: end;
+            margin-bottom: 168px;
+            margin-top: 40px;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                padding: 16px 31px;
+                text-decoration: none;
+                color: $main-text-color;
+                font-family: $ff-title;
+                font-weight: $ff-title;
+                font-size: 18px;
+                background-color: $third-bg;
+                border-radius: 6px;
+
+
+            }
+
+            a:active {
+                background-color: #0E8784;
+                opacity: 0.6;
+            }
+        }
+    }
+}

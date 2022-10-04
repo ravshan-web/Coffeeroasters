@@ -1,0 +1,52 @@
+.hero {
+    width: 1110px;
+    height: 520px;
+    margin-top: 168px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 168px auto;
+    position: relative;
+
+    .context {
+        width: 540px;
+        height: 260px;
+        margin-left: 560px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-family: $ff-title;
+            font-size: 40px;
+            line-height: 48px;
+            color: $secondary-bg;
+            font-weight: $weight-title;
+        }
+
+        p {
+            margin-top: 32px;
+            color: $secondary-bg;
+            font-family: $ff-text;
+            font-weight: $weight-text;
+            line-height: 26px;
+
+        }
+
+    }
+
+    .context::before {
+        content: '';
+        width: 445px;
+        height: 520px;
+        background-image: url(../../images/photos/Bitmap.png);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 8px;
+    }
+
+
+
+}

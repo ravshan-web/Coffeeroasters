@@ -1,0 +1,38 @@
+.nav{
+    max-width: 100%;
+    height: 113px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        cursor: pointer;
+    }
+
+    &__ul{
+        width: 22%;
+        display: flex;
+        justify-content: space-between;   
+        
+        &--list{
+            list-style-type: none;
+
+            &-link{
+                text-decoration: none;
+                text-transform: uppercase;
+                color:$link-color;   
+                font-family: $ff-text;
+                font-size: 12px; 
+                font-weight: $link-weight;
+                letter-spacing: 0.92px;
+
+               
+            }
+            &-link:active{
+                color:#333D4B;
+                
+            }
+
+        }
+    }
+}

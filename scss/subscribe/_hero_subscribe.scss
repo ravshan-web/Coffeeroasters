@@ -1,0 +1,70 @@
+.hero{
+    max-width: 100%;
+    height: 653px;
+    margin-top: 177px;
+    background: #2C343E;
+    border-radius: 10px;
+    padding: 91px 150px 107px 85px;
+
+    .circle {
+        width: 31px;
+        height: 31px;
+        border-radius: 50%;
+        border: 2px solid #0E8784;
+        background-color: transparent;
+        float: left;
+        margin-bottom: 67px;
+    }
+
+    .line {
+        margin-top: 14px;
+        width: 316px;
+        height: 2px;
+        background-color: #FDD6BA;
+        float: left;
+    }
+
+    &__context {
+        width: 1045px;
+        height: 453px;
+        display: flex;
+        // background-color: #8cb3e966;        
+
+
+        &--cards {
+            width: 340px;
+            height: 355px;
+            text-align: start;
+
+
+            b {
+                color: #FDD6BA;
+                font-family: $ff-title;
+                font-size: 72px;
+                line-height: 72px;
+                font-weight: $weight-title;
+
+            }
+
+            h3 {
+                color: $main-bg;
+                font-family: $ff-title;
+                font-size: 32px;
+                line-height: 36px;
+                font-weight: $weight-title;
+                margin-top: 38px;
+                width: 255px;
+            }
+
+            p {
+                color: $main-bg;
+                font-size: $fs-text;
+                font-weight: $weight-text;
+                font-family: $ff-text;
+                line-height: 26px;
+                margin-top: 42px;
+                width: 285px;
+            }
+        }
+    }
+}
