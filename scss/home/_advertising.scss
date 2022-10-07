@@ -214,3 +214,123 @@
 
     }
 }
+
+// R W D ================ 375px
+
+/// R W D ===================
+
+@media only screen and (max-width:375px) {
+    .advertising {
+        max-width: 327px;
+        height: 902px;
+        border-radius: 10px;
+        background-color: $secondary-bg;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 800px;
+
+        &__title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // margin-top: 56px;
+
+            h2 {                
+                margin-top: 64px;
+                font-weight: $weight-title;
+                color: #FEFCF7;
+                font-family: $ff-title;
+                font-size: 28px;
+                line-height: 28px;
+                text-align: center;
+            }
+
+            p {
+                font-family: $ff-text;
+                text-align: center;
+                max-width: 279px;
+                height: 125px;
+                font-size: 15px;
+                color: $main-text-color;
+                font-weight: $weight-text;
+                line-height: 25px;
+                margin-top: 32px;
+            }
+
+        }
+
+
+
+        &__card-wrapper {
+            max-width: 279px;
+            height: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            margin: 0 auto;
+            margin-top: 64px ;
+            
+
+            &--ad-card {
+                max-width: 279px;
+                height: 382px;
+                background-color: $third-bg;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;                
+                
+                
+
+                .card-icon {
+                    margin: 0;
+
+                    img {
+                        width: 56px;
+                        height: 56px;
+                    }
+                }
+
+                .card-context {
+                    max-width: 255px;
+                    min-height: 131px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    h3 {
+                        margin: 0;
+                        color: $main-text-color;
+                        font-size: 24px;
+                        font-family: $ff-title;
+                        font-weight: $weight-title;
+                        line-height: 32px;
+
+                    }
+
+                    p {
+                        margin: 0;
+                        color: $main-text-color;
+                        font-family: $ff-text;
+                        font-size: fs-text;
+                        line-height: 26px;
+                        margin-top: 16px;
+                        text-align: center;
+                        height: 50px;
+                        max-width: 255px;
+                    }
+                }
+            }
+
+        }
+
+
+
+    }
+}

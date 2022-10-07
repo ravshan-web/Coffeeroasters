@@ -118,3 +118,73 @@
     }
   }
 }
+
+// R W D ================ 375px
+
+@media only screen and (max-width: 375px){
+  .intro {
+    max-width: 327px;
+    height: 500px;
+    background-image: url(../../images/photos/rwd/hero-bg-mob.png);
+    background-repeat: no-repeat;   
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+  
+    &__context {
+      filter: none;
+      max-width: 279px;
+      height: 301px;
+      position: absolute;
+      left: 24px;
+      top: 80px;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    &__context > h1 {
+      max-width: 279px;
+      font-family: $ff-title;
+      color: $main-text-color;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      // max-width: 329px;
+    }
+  
+    &__context > p {
+      text-align: center;
+      max-width: 279px;
+      color: $main-text-color;
+      opacity: 0.8;
+      font-size: 15px;
+      font-family: $ff-text;
+      line-height: 25px;
+    }
+  
+    &__context > a {
+      display: inline-block;
+      border: none;
+      padding: 16px 31px;
+      text-decoration: none;
+      color: $main-text-color;
+      font-family: $ff-title;
+      font-weight: $ff-title;
+      font-size: 18px;
+      background-color: $third-bg;
+      border-radius: 6px;
+      margin-top: 56px;
+    }
+  
+    &__context > a:hover {
+      background-color: $btn-bg-hover;
+    }
+  }
+}
+

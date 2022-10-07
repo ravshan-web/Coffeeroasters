@@ -14,3 +14,12 @@
         // background-color: rgba(5, 78, 25, 0.2);
     }
 }
+
+@media only screen and (max-width: 375px){
+    .container{
+        max-width: 327px;
+        margin: 0 auto;
+        // padding: 0 20px;
+        // background-color: rgba(5, 78, 25, 0.2);
+    }
+}

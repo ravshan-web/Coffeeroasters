@@ -155,3 +155,85 @@
     
     }
 }
+
+//R W D =========== 375px
+
+@media only screen and (max-width:375px){
+    .hero{
+        max-width: 327px;
+        
+        margin: 90px auto ;
+        // background-color: rgb(200, 222, 176);
+        position: relative;
+        margin-bottom: 1200px;
+        
+    
+        &__bg{
+            display: flex;
+            justify-content: center;
+            max-width: 327px;
+            margin: auto 0;
+            opacity: 0.5;
+            position: relative;
+            // background-color: $main-bg;
+            // background-image: url(../../images/photos/our-collection.svg);
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            
+            img{
+                max-width: 100%;
+            }
+        }
+    
+        &__card-wrapper{
+            max-width: 327px;
+            // min-height: 278px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            z-index: 11111;
+            top: 72px; 
+            gap: 40px;        
+    
+            
+            &--card{                
+                width: 327px;  
+                height: 350px; 
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content: space-between; 
+                
+                .card-context{
+                    height: 193px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                
+            }
+    
+            &--card> .card-context> h3{
+                margin-top: 32px;
+                font-family: $ff-title;
+                font-weight: $ff-title;
+                font-size: 24px;
+                line-height: 32px;
+                color:$secondary-bg;
+            }
+    
+            &--card> .card-context>p{
+                text-align: center;
+                max-width: 282px;
+                margin-top: 24px;
+                color: $secondary-bg;
+                font-size: 15px;
+                font-family: $ff-text;
+                font-weight: $weight-text;
+            }   
+        }
+    
+    }
+}

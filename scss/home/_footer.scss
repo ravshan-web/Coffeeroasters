@@ -1,143 +1,217 @@
 footer {
-    background-color: $secondary-bg;
-    height: 120px;
-    display: flex;
-    align-items: center;
+  background-color: $secondary-bg;
+  height: 120px;
+  display: flex;
+  align-items: center;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    &__logo {
-        width: 210px;
-    }
+  &__logo {
+    width: 210px;
+  }
 }
 
 .footer__nav {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 105px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 105px;
 
-    &--list {
-        list-style-type: none;
-        text-transform: uppercase;
+  &--list {
+    list-style-type: none;
+    text-transform: uppercase;
 
-        a {
-            text-decoration: none;
-            color: #83888F;
-            font-family: $ff-text;
-            font-size: 12px;
-            letter-spacing: 0.92px;
-            font-weight: 700;
-        }
-
-        a:hover {
-            color: #FEFCF7;
-        }
+    a {
+      text-decoration: none;
+      color: #83888f;
+      font-family: $ff-text;
+      font-size: 12px;
+      letter-spacing: 0.92px;
+      font-weight: 700;
     }
+
+    a:hover {
+      color: #fefcf7;
+    }
+  }
 }
 
-
 .social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 305px;
+
+  i {
+    transform: scale(2);
+    margin-right: 48px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  i:hover {
+    color: #fdd6ba;
+    transition: all 0.4s;
+    transform: scale(3);
+  }
+}
+
+// R W D =============  768px
+
+@media only screen and (max-width: 768px) {
+  footer {
+    background-color: $secondary-bg;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer {
+    width: 283px;
+    height: 162px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: inline;
+    width: 210px;
+  }
+
+  .footer__nav {
+    width: 283px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 305px;
+    margin: 0;
+
+    &--list {
+      list-style-type: none;
+      text-transform: uppercase;
+
+      a {
+        margin: 0;
+        text-decoration: none;
+        color: #83888f;
+        font-family: $ff-text;
+        font-size: 12px;
+        letter-spacing: 0.92px;
+        font-weight: 700;
+      }
+
+      a:hover {
+        color: #fefcf7;
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    margin: 0;
 
     i {
-        transform: scale(2);
-        margin-right: 48px;
-        color: #fff;
-        cursor: pointer;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
     }
 
     i:hover {
-        color: #FDD6BA;
-        transition: all 0.4s;
-        transform: scale(3);
+      color: #fdd6ba;
+      transition: all 0.4s;
+      transform: scale(2);
     }
-
-
+  }
 }
 
+// R W D =============  375px
 
-// R W D =============
+@media only screen and (max-width: 375px) {
+  footer {
+    margin-top: 450px;
+    background-color: $secondary-bg;
+    height: 346px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-@media only screen and (max-width:768px) {
-    footer {
-        background-color: $secondary-bg;
-        height: 270px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .footer {
+    width: 327px;
+    height: 238px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
 
-    .footer {
-        width: 283px;
-        height: 162px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-    }
+  .logo {
+    display: block;
+    width: 210px;
+  }
 
-    .logo {
-        display: inline;
-        width: 210px;
-    }
+  .footer__nav {
+    width: 122px;
+    height: 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 
-    .footer__nav {
-        width: 283px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    &--list {
+      list-style-type: none;
+      text-transform: uppercase;
+
+      a {
         margin: 0;
+        text-decoration: none;
+        color: #83888f;
+        font-family: $ff-text;
+        font-size: 12px;
+        letter-spacing: 0.92px;
+        font-weight: 700;
+      }
 
-        &--list {
-            list-style-type: none;
-            text-transform: uppercase;
+      a:hover {
+        color: #fefcf7;
+      }
+    }
+  }
 
-            a {
-                margin: 0;
-                text-decoration: none;
-                color: #83888F;
-                font-family: $ff-text;
-                font-size: 12px;
-                letter-spacing: 0.92px;
-                font-weight: 700;
-            }
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 24px;
 
-            a:hover {
-                color: #FEFCF7;
-            }
-        }
+    a {
+      text-decoration: none;
     }
 
-
-    .social-links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 120px;
-        margin: 0;
-
-        i {
-            font-size: 18px;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        i:hover {
-            color: #FDD6BA;
-            transition: all 0.4s;
-            transform: scale(2);
-        }
-
-
+    i {
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
     }
+
+    i:hover {
+      color: #fdd6ba;
+      transition: all 0.4s;
+      transform: scale(2);
+    }
+  }
 }
